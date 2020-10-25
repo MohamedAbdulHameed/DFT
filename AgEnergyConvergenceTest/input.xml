@@ -1,0 +1,18 @@
+<input>
+    <title>Ag Convergence Test</title>
+    <structure speciespath="/home/mohamed/Downloads/exciting//species">
+        <crystal scale="7.7201">
+            <basevect>0.5 0.5 0.0</basevect>
+            <basevect>0.5 0.0 0.5</basevect>
+            <basevect>0.0 0.5 0.5</basevect>
+        </crystal>
+        <species speciesfile="Ag.xml">
+            <atom coord="0.0  0.0  0.0"/>
+        </species>
+    </structure>
+    <groundstate
+        xctype="GGA_PBE_SOL"
+        ngridk="6 6 6"
+        rgkmax="5.0">
+    </groundstate>
+</input>
