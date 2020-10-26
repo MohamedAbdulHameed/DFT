@@ -1,5 +1,7 @@
 # How to use XCrySDen to visualize exciting input files
 
+`exciting` is a DFT code that is based on the LAPW method and only available on Linux.
+
 Read [F. Finocchi's excellent lecture notes](http://www.attaccalite.com/wp-content/uploads/2017/04/pdf_DFT4beginners.pdf) on DFT if you are into functional calculus, or read G.J. Lee's [Computational Materials Science: An Introduction](https://www.routledge.com/Computational-Materials-Science-An-Introduction-Second-Edition/Lee/p/book/9781498749732) if you want a gentle, though comprehensive, introduction.
 
 Download `exciting nitrogen 14` [here](http://exciting-code.org/nitrogen-14).
