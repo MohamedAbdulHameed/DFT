@@ -1,3 +1,5 @@
+# How to use XCrySDen to visualize `exciting` input files
+
 Read [F. Finocchi's excellent lecture notes](http://www.attaccalite.com/wp-content/uploads/2017/04/pdf_DFT4beginners.pdf) on DFT if you are into functional calculus, or read G.J. Lee's [Computational Materials Science: An Introduction](https://www.routledge.com/Computational-Materials-Science-An-Introduction-Second-Edition/Lee/p/book/9781498749732) if you want a gentle, though comprehensive, introduction.
 
 Download `exciting nitrogen 14` [here](http://exciting-code.org/nitrogen-14).
@@ -40,7 +42,7 @@ addOption --exciting  $env(EXCITINGTOOLS)/ex2xsf {
   load structure from exciting input.xml format
 }
 ```
-`EXCITINGTOOLS` is one of the `PATH` environment variables you defined, and `ex2xsf` is a program that transforms `exciting` `input.xml` files to `XSF` files readable by XCrySDen.
+`EXCITINGTOOLS` is one of the `PATH` environment variables you defined, and `ex2xsf` is a program that transforms `XML` files to `XSF` files readable by XCrySDen.
 * You are now ready to visualize your input. Just go to the folder where your input is and type the following in the terminal:
 ```
 $ xcrysden --exciting input.xml &
