@@ -1,0 +1,1 @@
+A learn-by-doing Quantum Espresso tutorial. The input file `halite.in` contains a comprehensive explanation of each card and how it relates to the other cards. The input was tested for convergence by observing variation in pressure, which is the most sensitive variable to numerics.
