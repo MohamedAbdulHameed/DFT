@@ -31,7 +31,7 @@ Pb2 Pb 1 a  0.0  0.5  0.23
 ```
 - The problem with this file is that it does not include the symmetery information of the crystal, which is necessary for your DFT calculation. The crystal is defined using the P1 space group, which is the space group of least symmetry.
 
-- To overcome this problem you need to use the [FINDSYM](https://stokes.byu.edu/iso/findsym.php) tool. In principle, it takes a P1 CIF file and return a CIF file with the "highest symmetry" of the crystal. However, FINDSYM is quite picky when it comes to CIF files. If you upload your template, it returns an error. To circumvent this difficulty, upload the template to the [Bilbao Crystallographic Server](https://www.cryst.ehu.es/).
+- To overcome this problem you need to use the [FINDSYM](https://stokes.byu.edu/iso/findsym.php) tool. In principle, it takes a P1 CIF file and return a CIF file with the "highest symmetry" of the crystal. However, FINDSYM is quite picky when it comes to CIF files. If you upload this template, it returns an error. To circumvent this difficulty, upload the template to the [Bilbao Crystallographic Server](https://www.cryst.ehu.es/).
 
 - From the Bilbao Crystallographic Server home page, choose `Structure Utilities`, and then choose `VISUALIZE`.
 - Upload your template, and click `Show`. The crystal will be viewed using `Jmol`.
@@ -66,7 +66,7 @@ O2     O ? 1a     0.50000  0.50000  0.50000
 Pb1   Pb ? 1a     0.50000  0.00000  0.77000
 Pb2   Pb ? 1a     0.00000  0.50000  0.23000
 ```
-A bit different than our previous file and readable by `FINDSYM`.
+A bit different than your previous file, but readable by `FINDSYM`.
 - Go back to [FINDSYM](https://stokes.byu.edu/iso/findsym.php), upload the new CIF file, scroll down and clik `OK` to submit data.
 - The new CIF file will show up. Scroll down and download it. Change the file's extension from `.txt` to `.cif`. It looks like this:
 ```
@@ -116,7 +116,7 @@ Pb1 Pb   2 g 0.00000 0.50000 0.23000 1.00000 0,0,Dz
 
 # end of cif
 ```
-You notice that the space group has changed to `P -4 m 2`.
+Notice that the space group has changed to `P -4 m 2`.
 # Using the CIF file with CIF2Cell
 - If you used this last CIF file with `cif2cell`:
 ```
@@ -142,7 +142,7 @@ data_findsym-output
 _audit_creation_method FINDSYM
 _cod_database_code None
 ```
-- Also, change the following line:
+- Also, change the following lines:
 ```
 _symmetry_space_group_name_H-M "P -4 m 2"
 _symmetry_Int_Tables_number 115
@@ -167,8 +167,8 @@ _symmetry_Int_Tables_number	51
 51:bca    P m c m       -P 2c 2
 51:a-cb   P m a m       -P 2 2a
 ```
-- There are 6 possibilities to the 51 space group. To know which one to choose, look at the line: `_space_group.transform_Pp_abc a,b,c;0,0,0`.
-- The letter combiniation is `a,b,c` which is not one of the 6 possibilities because it is the default choice. That is, `51` is equivalent to `51:abc`.
-- Thus the right space group symbol to choose is `-P 2a 2a`. Yo may put in in either single or double quotes in the CIF file.
+- There are 6 possibilities to the 51st space group. To know which one to choose, look at the line: `_space_group.transform_Pp_abc a,b,c;0,0,0`.
+- The letter combiniation is `a,b,c` which is not present in the 6 possibilities because it is the default choice. That is, `51` is equivalent to `51:abc`.
+- Thus, the correct space group to choose is `-P 2a 2a`. Yo may use either single or double quotes in the CIF file.
 
-Congratulations, you have created a *working* CIF file without knowing much crystallography.
+Congratulations, you have created a *working* CIF file without knowing much about crystallography.
