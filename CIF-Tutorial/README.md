@@ -2,7 +2,7 @@
 
 ***This tutorial is largely based on Stefaan Cottenier's course: [Computational Materials Physics](https://compmatphys.epotentia.com/), and can be treated as my personal lecture notes of the course.***
 
-- Use the following template making the necessary changes:
+- Use the following template making the necessary adjustments:
 ```
 #===============================================================================
 # General-purpose P1 CIF
