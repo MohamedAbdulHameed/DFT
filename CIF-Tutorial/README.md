@@ -1,5 +1,7 @@
 # How to create your own CIF files
-***This tutorial is largely based on Stefaan Cottenier's course: [Computational Materials Physics](https://compmatphys.epotentia.com/).***
+
+***This tutorial is largely based on Stefaan Cottenier's course: [Computational Materials Physics](https://compmatphys.epotentia.com/), and can be treated as my personal lecture notes of the course.***
+
 - Use the following template making the necessary changes:
 ```
 #===============================================================================
