@@ -1,4 +1,4 @@
-This is an automated convergence test for QE that is written in both bash and Python.
+This is an automated convergence test for QE that is written in both Bash and Python.
 
 It is a bit messy but gets the job done.
 
