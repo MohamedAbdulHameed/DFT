@@ -1,10 +1,10 @@
 &CONTROL
 	calculation		= 'vc-relax'	! Option for geometry optimization.
-	verbosity		= 'low'		! Default.
+	verbosity		= 'low'		! Default. If you set verbosity = 'high', you will get additional information in your output file, e.g., about symmetries and occupation numbers.
 	tstress			= .true.	! Calculate stress.
 	tprnfor			= .true.	! Calculate forces.
 	outdir 			= '.'		! Output directory. ('.') means "current directory".
-	prefix			= 'output'	! Name of the output file.
+	prefix			= 'GeomOpt'	! Prefix of the name of the output folder and the XML file: "GeomOpt.save" and "GeomOpt.XML"
 	pseudo_dir		= '.'		! Directory containing pseudopotential files.
 /
 
